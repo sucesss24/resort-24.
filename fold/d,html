@@ -1,0 +1,56 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Restaurant Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <header>
+        <h1>Restaurant Reservation System</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Table reservation">Table Reservations</a></li>
+            <li><a href="#order">Order Management</a></li>
+            <li><a href="#menu">Menu Updates</a></li>
+            <li><a href="#billing">Billing</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="reservation-form">
+            <h2>Make a Reservation</h2>
+            <form action="reserve.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+                <button type="submit">
+                    <a href="d.html">Reserve Table</a></button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Restaurant Reservation System</p>
+    </footer>
+
+
+    
+
+</body>
+</html>
+
